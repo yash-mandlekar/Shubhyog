@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Service Details - Shubhyog Weddings & Hospitality</title>
+    <meta name="author" content="Shubhyog" />
+    <meta
+      name="description"
+      content="Detailed overview of all wedding management and hospitality services offered by Shubhyog - from event coordination to artist management."
+    />
+    <meta
+      name="keywords"
+      content="Shubhyog, wedding services, event coordination, hospitality, catering, logistics"
+    />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/img/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      /* Service Details Page Custom Styles */
+      .service-detail-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-left: 5px solid #dc3545;
+      }
+      .service-detail-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 50px rgba(220, 53, 69, 0.15);
+      }
+      .service-detail-card .service-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #dc3545, #c82333);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .service-detail-card .service-icon i {
+        font-size: 32px;
+        color: white;
+      }
+      .service-detail-card h3 {
+        font-size: 26px;
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+      .service-detail-card .service-description {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+      .service-detail-card .phase-section {
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 15px;
+      }
+      .service-detail-card .phase-section h4 {
+        font-size: 18px;
+        color: #dc3545;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      .service-detail-card .phase-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .service-detail-card .phase-section ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        color: #555;
+        display: flex;
+        align-items: flex-start;
+      }
+      .service-detail-card .phase-section ul li:last-child {
+        border-bottom: none;
+      }
+      .service-detail-card .phase-section ul li i {
+        color: #dc3545;
+        margin-right: 12px;
+        margin-top: 4px;
+      }
+      .premium-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #f093fb, #f5576c);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      .service-navigation {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+      }
+      .service-navigation h4 {
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      .service-navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .service-navigation ul li {
+        margin-bottom: 10px;
+      }
+      .service-navigation ul li a {
+        color: #666;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      .service-navigation ul li a:hover {
+        background: linear-gradient(135deg, #dc3545, #c82333);
+        color: white;
+      }
+      .service-navigation ul li a i {
+        margin-right: 10px;
+      }
+      .cta-section {
+        background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+        border-radius: 20px;
+        padding: 50px;
+        text-align: center;
+        color: white;
+      }
+      .cta-section h3 {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+      .cta-section p {
+        font-size: 18px;
+        opacity: 0.9;
+        margin-bottom: 30px;
+      }
+      .cta-section .vs-btn {
+        background: white;
+        color: #dc3545;
+      }
+      .cta-section .vs-btn:hover {
+        background: #f8f9fa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+    <!--==============================
+	Preloader
+	==============================-->
+    <div class="preloader">
+      <button class="vs-btn preloaderCls">Cancel Preloader</button>
+      <div class="preloader-inner">
+        <img src="assets/logo.png" alt="logo" />
+        <span class="loader"></span>
+      </div>
+    </div>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+      <div class="vs-menu-area text-center">
+        <div class="mobile-logo">
+          <a href="index.html"
+            ><img src="assets/logo.png" alt="Shubhyog" class="logo"
+          /></a>
+          <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+        </div>
+        <div class="vs-mobile-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="service.html">Services</a>
+              <ul class="sub-menu">
+                <li><a href="service.html">Wedding Planning</a></li>
+                <li><a href="service-details.html">Service Details</a></li>
+                <li><a href="vendors.html">Vendor Recommendations</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+            <li>
+              <a href="event-details.html">Events</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--==============================
+      Offcanvas
+  ============================== -->
+    <div class="sidemenu-wrapper d-none d-lg-block">
+      <div class="sidemenu-content">
+        <button class="closeButton sideMenuCls">
+          <i class="far fa-times"></i>
+        </button>
+        <div class="widget">
+          <div class="vs-widget-about">
+            <div class="footer-logo">
+              <a href="index.html"
+                ><img src="assets/logo.jpg" width="100" alt="Shubhyog"
+              /></a>
+            </div>
+            <p>
+              With over 12 years of experience and 350+ successfully managed
+              weddings, Shubhyog turns your dreams into reality with exceptional
+              service and unforgettable celebrations.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-behance"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="widget">
+          <h3 class="widget_title h4">Our Services</h3>
+          <ul class="list-unstyled" style="margin: 0; padding: 0">
+            <li style="padding: 8px 0; border-bottom: 1px solid #eee">
+              <a href="service.html" style="color: #333; text-decoration: none">
+                <i
+                  class="fas fa-ring"
+                  style="color: #dc3545; margin-right: 10px"
+                ></i
+                >Full Service Planning
+              </a>
+            </li>
+            <li style="padding: 8px 0; border-bottom: 1px solid #eee">
+              <a href="service.html" style="color: #333; text-decoration: none">
+                <i
+                  class="fas fa-calendar-check"
+                  style="color: #dc3545; margin-right: 10px"
+                ></i
+                >Event Coordination
+              </a>
+            </li>
+            <li style="padding: 8px 0; border-bottom: 1px solid #eee">
+              <a href="service.html" style="color: #333; text-decoration: none">
+                <i
+                  class="fas fa-paint-brush"
+                  style="color: #dc3545; margin-right: 10px"
+                ></i
+                >Production & Decor
+              </a>
+            </li>
+            <li style="padding: 8px 0; border-bottom: 1px solid #eee">
+              <a href="service.html" style="color: #333; text-decoration: none">
+                <i
+                  class="fas fa-om"
+                  style="color: #dc3545; margin-right: 10px"
+                ></i
+                >Ritual Management
+              </a>
+            </li>
+            <li style="padding: 8px 0; border-bottom: 1px solid #eee">
+              <a href="service.html" style="color: #333; text-decoration: none">
+                <i
+                  class="fas fa-utensils"
+                  style="color: #dc3545; margin-right: 10px"
+                ></i
+                >Catering Management
+              </a>
+            </li>
+            <li style="padding: 8px 0">
+              <a href="service.html" style="color: #333; text-decoration: none">
+                <i
+                  class="fas fa-truck"
+                  style="color: #dc3545; margin-right: 10px"
+                ></i
+                >Logistics Management
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h3 class="widget_title h4">Wedding Packages</h3>
+          <div
+            style="
+              background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+              border-radius: 10px;
+              padding: 15px;
+              margin-bottom: 10px;
+            "
+          >
+            <h5 style="margin: 0 0 5px; color: #333">Shubh Vivah</h5>
+            <span style="color: #dc3545; font-weight: 700; font-size: 18px"
+              >₹4,99,000/-</span
+            >
+          </div>
+          <div
+            style="
+              background: linear-gradient(135deg, #dc3545, #c82333);
+              border-radius: 10px;
+              padding: 15px;
+              margin-bottom: 10px;
+            "
+          >
+            <h5 style="margin: 0 0 5px; color: #fff">Divya Vivah</h5>
+            <span style="color: #fff; font-weight: 700; font-size: 18px"
+              >₹6,99,000/-</span
+            >
+          </div>
+          <div
+            style="
+              background: linear-gradient(135deg, #f8d7da 0%, #ffffff 100%);
+              border-radius: 10px;
+              padding: 15px;
+            "
+          >
+            <h5 style="margin: 0 0 5px; color: #333">Amrut Vivah</h5>
+            <span style="color: #dc3545; font-weight: 700; font-size: 18px"
+              >₹9,99,000/-</span
+            >
+          </div>
+        </div>
+        <div class="widget">
+          <h3 class="widget_title h4">Locations We Serve</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <span
+              style="
+                background: #f8f9fa;
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-size: 13px;
+              "
+              ><i
+                class="fas fa-map-marker-alt"
+                style="color: #dc3545; margin-right: 5px"
+              ></i
+              >Mahabaleshwar</span
+            >
+            <span
+              style="
+                background: #f8f9fa;
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-size: 13px;
+              "
+              ><i
+                class="fas fa-map-marker-alt"
+                style="color: #dc3545; margin-right: 5px"
+              ></i
+              >Igatpuri</span
+            >
+            <span
+              style="
+                background: #f8f9fa;
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-size: 13px;
+              "
+              ><i
+                class="fas fa-map-marker-alt"
+                style="color: #dc3545; margin-right: 5px"
+              ></i
+              >Lonavala</span
+            >
+            <span
+              style="
+                background: #f8f9fa;
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-size: 13px;
+              "
+              ><i
+                class="fas fa-map-marker-alt"
+                style="color: #dc3545; margin-right: 5px"
+              ></i
+              >Saputara</span
+            >
+            <span
+              style="
+                background: #f8f9fa;
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-size: 13px;
+              "
+              ><i
+                class="fas fa-map-marker-alt"
+                style="color: #dc3545; margin-right: 5px"
+              ></i
+              >Udaipur</span
+            >
+            <span
+              style="
+                background: #f8f9fa;
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-size: 13px;
+              "
+              ><i
+                class="fas fa-map-marker-alt"
+                style="color: #dc3545; margin-right: 5px"
+              ></i
+              >Jaipur</span
+            >
+            <span
+              style="
+                background: #f8f9fa;
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-size: 13px;
+              "
+              ><i
+                class="fas fa-map-marker-alt"
+                style="color: #dc3545; margin-right: 5px"
+              ></i
+              >Goa</span
+            >
+          </div>
+          <p
+            style="
+              font-style: italic;
+              margin-top: 10px;
+              font-size: 13px;
+              color: #666;
+            "
+          >
+            "We also offer our services wherever your heart desires."
+          </p>
+        </div>
+        <div class="widget">
+          <h3 class="widget_title h4">Contact Us</h3>
+          <div style="margin-bottom: 10px">
+            <i
+              class="fas fa-phone-alt"
+              style="color: #dc3545; margin-right: 10px"
+            ></i>
+            <a
+              href="tel:+918788171625"
+              style="color: #333; text-decoration: none; font-weight: 600"
+              >+91-8788 171 625</a
+            >
+          </div>
+          <div style="margin-bottom: 10px">
+            <i
+              class="fas fa-envelope"
+              style="color: #dc3545; margin-right: 10px"
+            ></i>
+            <a
+              href="mailto:info@shubhyog.com"
+              style="color: #333; text-decoration: none"
+              >info@shubhyog.com</a
+            >
+          </div>
+          <div>
+            <i
+              class="fas fa-map-marker-alt"
+              style="color: #dc3545; margin-right: 10px"
+            ></i>
+            <span style="color: #333">Mumbai, Maharashtra, India</span>
+          </div>
+          <div style="margin-top: 15px">
+            <a
+              href="contact.html"
+              class="vs-btn"
+              style="width: 100%; text-align: center"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="vs-header">
+      <!-- Header Top -->
+      <div class="header-top v2">
+        <div class="container">
+          <div
+            class="row align-items-center justify-content-between gy-1 text-center text-lg-start"
+          >
+            <div class="col-lg-auto d-none d-lg-block">
+              <p class="header-text">
+                <i class="fas fa-map-marker-alt"></i>Mumbai, Maharashtra, India
+              </p>
+            </div>
+            <div class="col-lg-auto">
+              <div class="header-right">
+                <div class="header-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-inner style2">
+        <div class="container">
+          <div class="menu-top">
+            <div
+              class="row gx-50 justify-content-between align-items-center gx-sm-0"
+            >
+              <div class="col">
+                <div class="header-logo rounded-circle">
+                  <a href="index.html"
+                    ><img
+                      src="assets/logo.jpg"
+                      alt="Shubhyog"
+                      class="logo"
+                      width="90"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-auto header-info d-none d-lg-flex pe-0">
+                <div class="header-info_icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="media-body">
+                  <span class="header-info_label">Email Us:</span>
+                  <div class="header-info_link">
+                    <a href="mailto:info@shubhyog.com">info@shubhyog.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto header-info d-none d-lg-flex pe-0">
+                <div class="header-info_icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="media-body">
+                  <span class="header-info_label">Call us 24/7</span>
+                  <div class="header-info_link">
+                    <a href="tel:+918788171625">+91 87881 71625</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-none d-xl-inline-flex">
+                  <a href="contact.html" class="vs-btn" tabindex="0">
+                    Make An Appointment
+                  </a>
+                </div>
+                <button class="vs-menu-toggle d-inline-block d-lg-none">
+                  <i class="fal fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <!-- Main Menu Area -->
+          <div class="sticky-wrapper vs-navbar">
+            <div class="sticky-active">
+              <div class="custom-container">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <nav class="main-menu menu-style2 d-none d-lg-block">
+                      <ul>
+                        <li>
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                          <a href="service.html">Services</a>
+                          <ul class="sub-menu">
+                            <li><a href="service.html">Wedding Planning</a></li>
+                            <li>
+                              <a href="service-details.html">Service Details</a>
+                            </li>
+                            <li>
+                              <a href="vendors.html">Vendor Recommendations</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                          <a href="event-details.html">Events</a>
+                        </li>
+                        <li>
+                          <a href="contact.html">Contact Us</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col-auto">
+                    <div class="header-btns">
+                      <div class="d-none d-lg-block">
+                        <form action="#" class="header-search v2">
+                          <input type="text" placeholder="Search here..." />
+                          <button type="submit" aria-label="search-button">
+                            <img src="assets/img/icons/e-2-1.svg" alt="icon" />
+                          </button>
+                        </form>
+                      </div>
+                      <div class="d-none d-lg-inline-block">
+                        <button class="sideMenuToggler v2">
+                          <i>
+                            <svg
+                              width="30"
+                              height="30"
+                              viewBox="0 0 30 30"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_214_286)">
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M24.7161 14.0882L29.0814 9.72289C30.3067 8.49763 30.3067 6.50957 29.0814 5.2843L24.7161 0.918952C23.4908 -0.306317 21.5027 -0.306317 20.2775 0.918952L15.9121 5.2843C14.6868 6.50957 14.6868 8.49763 15.9121 9.72289L20.2775 14.0882C21.5027 15.3135 23.4908 15.3135 24.7161 14.0882ZM27.6019 8.24336L23.2365 12.6087C22.8285 13.0168 22.1651 13.0168 21.757 12.6087L17.3916 8.24336C16.9836 7.83529 16.9836 7.1719 17.3916 6.76383L21.757 2.39848C22.1651 1.99041 22.8285 1.99041 23.2365 2.39848L27.6019 6.76383C28.0099 7.1719 28.0099 7.83529 27.6019 8.24336Z"
+                                  fill="white"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M13.6025 19.5363C13.6025 18.7035 13.2718 17.9051 12.6827 17.317C12.0947 16.728 11.2963 16.3973 10.4634 16.3973C8.3854 16.3973 5.21707 16.3973 3.13903 16.3973C2.30614 16.3973 1.50778 16.728 0.919734 17.317C0.330643 17.9051 0 18.7035 0 19.5363V26.8608C0 27.6936 0.330643 28.492 0.919734 29.0801C1.50778 29.6691 2.30614 29.9998 3.13903 29.9998H10.4634C11.2963 29.9998 12.0947 29.6691 12.6827 29.0801C13.2718 28.492 13.6025 27.6936 13.6025 26.8608V19.5363ZM29.2976 19.5363C29.2976 18.7035 28.967 17.9051 28.3779 17.317C27.7899 16.728 26.9915 16.3973 26.1586 16.3973C24.0806 16.3973 20.9122 16.3973 18.8342 16.3973C18.0013 16.3973 17.2029 16.728 16.6149 17.317C16.0258 17.9051 15.6952 18.7035 15.6952 19.5363V26.8608C15.6952 27.6936 16.0258 28.492 16.6149 29.0801C17.2029 29.6691 18.0013 29.9998 18.8342 29.9998H26.1586C26.9915 29.9998 27.7899 29.6691 28.3779 29.0801C28.967 28.492 29.2976 27.6936 29.2976 26.8608V19.5363ZM11.5098 19.5363V26.8608C11.5098 27.138 11.3999 27.4049 11.2032 27.6005C11.0075 27.7972 10.7407 27.9071 10.4634 27.9071H3.13903C2.86175 27.9071 2.59493 27.7972 2.39927 27.6005C2.20255 27.4049 2.09269 27.138 2.09269 26.8608V19.5363C2.09269 19.2591 2.20255 18.9922 2.39927 18.7966C2.59493 18.5999 2.86175 18.49 3.13903 18.49H10.4634C10.7407 18.49 11.0075 18.5999 11.2032 18.7966C11.3999 18.9922 11.5098 19.2591 11.5098 19.5363ZM27.205 19.5363V26.8608C27.205 27.138 27.0951 27.4049 26.8984 27.6005C26.7027 27.7972 26.4359 27.9071 26.1586 27.9071H18.8342C18.5569 27.9071 18.2901 27.7972 18.0944 27.6005C17.8977 27.4049 17.7879 27.138 17.7879 26.8608V19.5363C17.7879 19.2591 17.8977 18.9922 18.0944 18.7966C18.2901 18.5999 18.5569 18.49 18.8342 18.49H26.1586C26.4359 18.49 26.7027 18.5999 26.8984 18.7966C27.0951 18.9922 27.205 19.2591 27.205 19.5363ZM13.6025 3.84118C13.6025 3.00829 13.2718 2.20993 12.6827 1.62188C12.0947 1.03279 11.2963 0.702148 10.4634 0.702148C8.3854 0.702148 5.21707 0.702148 3.13903 0.702148C2.30614 0.702148 1.50778 1.03279 0.919734 1.62188C0.330643 2.20993 0 3.00829 0 3.84118V11.1656C0 11.9985 0.330643 12.7968 0.919734 13.3849C1.50778 13.974 2.30614 14.3046 3.13903 14.3046H10.4634C11.2963 14.3046 12.0947 13.974 12.6827 13.3849C13.2718 12.7968 13.6025 11.9985 13.6025 11.1656V3.84118ZM11.5098 3.84118V11.1656C11.5098 11.4429 11.3999 11.7097 11.2032 11.9054C11.0075 12.1021 10.7407 12.2119 10.4634 12.2119H3.13903C2.86175 12.2119 2.59493 12.1021 2.39927 11.9054C2.20255 11.7097 2.09269 11.4429 2.09269 11.1656V3.84118C2.09269 3.5639 2.20255 3.29708 2.39927 3.10142C2.59493 2.9047 2.86175 2.79484 3.13903 2.79484H10.4634C10.7407 2.79484 11.0075 2.9047 11.2032 3.10142C11.3999 3.29708 11.5098 3.5639 11.5098 3.84118Z"
+                                  fill="white"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_214_286">
+                                  <rect width="30" height="30" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--==============================
+    Breadcumb
+    ============================== -->
+    <div class="breadcumb-wrapper" data-bg-src="assets/new-img/gallery-13.jpeg">
+      <div class="overlay"></div>
+      <!-- <img src="assets/img/shapes/b-1-1.png" alt="shape" class="shape" /> -->
+      <div class="container z-index-common">
+        <div class="breadcumb-content">
+          <h1 class="breadcumb-title">Services Overview</h1>
+          <div class="breadcumb-menu-wrap">
+            <ul class="breadcumb-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li>Details</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Details Area -->
+    <section class="space-top space-extra-bottom">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar Navigation -->
+          <div class="col-lg-4">
+            <div class="service-navigation sticky-top" style="top: 100px">
+              <h4><i class="fas fa-list-ul me-2"></i>Our Services</h4>
+              <ul>
+                <li>
+                  <a href="#event-coordination"
+                    ><i class="fas fa-tasks"></i>Overall Event Coordination</a
+                  >
+                </li>
+                <li>
+                  <a href="#production-decor"
+                    ><i class="fas fa-palette"></i>Production & Décor</a
+                  >
+                </li>
+                <li>
+                  <a href="#bride-groom-shadow"
+                    ><i class="fas fa-user-tie"></i>Bride & Groom Shadow</a
+                  >
+                </li>
+                <li>
+                  <a href="#ritual-management"
+                    ><i class="fas fa-om"></i>Ritual Management</a
+                  >
+                </li>
+                <li>
+                  <a href="#rsvp-guest"
+                    ><i class="fas fa-phone-alt"></i>RSVP & Guest Calling</a
+                  >
+                </li>
+                <li>
+                  <a href="#logistics"
+                    ><i class="fas fa-truck"></i>Logistics Management</a
+                  >
+                </li>
+                <li>
+                  <a href="#catering"
+                    ><i class="fas fa-utensils"></i>Catering Management</a
+                  >
+                </li>
+                <li>
+                  <a href="#hospitality"
+                    ><i class="fas fa-hands-helping"></i>Guest Hospitality &
+                    Welcome</a
+                  >
+                </li>
+                <li>
+                  <a href="#social-media"
+                    ><i class="fas fa-video"></i>Social Media Reels Makers</a
+                  >
+                </li>
+                <li>
+                  <a href="#artist-management"
+                    ><i class="fas fa-star"></i>Artist Management (Premium)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="col-lg-8">
+            <!-- Overall Event Coordination -->
+            <div class="service-detail-card" id="event-coordination">
+              <div class="service-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h3>1) Overall Event Coordination</h3>
+              <p class="service-description">
+                From planning to execution, we manage every detail for a
+                seamless event. Our comprehensive coordination ensures smooth
+                transitions between families and vendors.
+              </p>
+
+              <div class="phase-section">
+                <h4>
+                  <i class="fas fa-clipboard-list me-2"></i>Planning Phase
+                </h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Dedicated event manager
+                    assigned to the family
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Detailed itinerary
+                    creation for functions, pre-wedding, wedding event
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Budget planning and
+                    allocation across functions
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Vendor selection,
+                    contract management, and negotiations
+                  </li>
+                </ul>
+              </div>
+
+              <div class="phase-section">
+                <h4><i class="fas fa-cogs me-2"></i>Execution Phase</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>On-ground management
+                    during all functions
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Ensuring smooth
+                    coordination between families and vendors
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Monitoring timelines and
+                    troubleshooting last-minute issues
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Production & Décor -->
+            <div class="service-detail-card" id="production-decor">
+              <div class="service-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3>2) Production & Décor</h3>
+              <p class="service-description">
+                We liaise with decorators and production teams to align designs
+                and themes flawlessly. Custom floral arrangements, fabric
+                draping, and stunning lighting create the perfect ambiance.
+              </p>
+
+              <div class="phase-section">
+                <h4><i class="fas fa-lightbulb me-2"></i>Design & Ideation</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Theme conceptualization
+                    based on client preferences (e.g., royal, rustic,
+                    contemporary)
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Decor visualization and
+                    mood boards for approval
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Managing with vendors,
+                    stage setup, sound, and lighting for performances
+                  </li>
+                </ul>
+              </div>
+
+              <div class="phase-section">
+                <h4><i class="fas fa-hammer me-2"></i>Execution</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Custom floral
+                    arrangements, fabric draping, and lighting
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Stage designs, mandap
+                    setup, and photo booth installation
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Coordination with
+                    decorators, florists, and production teams for timely setup
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Bride & Groom Shadow -->
+            <div class="service-detail-card" id="bride-groom-shadow">
+              <div class="service-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3>3) Bride & Groom Shadow (Personal Assistant Services)</h3>
+              <p class="service-description">
+                Your personal assistant throughout the wedding, ensuring the
+                bride and groom are comfortable and everything runs smoothly
+                behind the scenes.
+              </p>
+
+              <div class="phase-section">
+                <h4>
+                  <i class="fas fa-concierge-bell me-2"></i>Personal Care
+                  Services
+                </h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Managing outfits,
+                    jewelry, and essential accessories during the wedding
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Coordinating timely
+                    makeup touch-ups and outfit changes
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Providing refreshments
+                    and managing personal requests
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Ritual Management -->
+            <div class="service-detail-card" id="ritual-management">
+              <div class="service-icon">
+                <i class="fas fa-om"></i>
+              </div>
+              <h3>4) Ritual Management</h3>
+              <p class="service-description">
+                Ensuring every tradition is respected and every ritual is
+                executed on time with precision. We coordinate with priests and
+                families to honor cultural requirements.
+              </p>
+
+              <div class="phase-section">
+                <h4><i class="fas fa-scroll me-2"></i>Ceremony Coordination</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Scheduling ceremonies in
+                    coordination with priests/pandits and families
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Preparing a checklist for
+                    puja items and materials required for rituals
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Ensuring cultural and
+                    traditional requirements are met accurately
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- RSVP & Guest Calling -->
+            <div class="service-detail-card" id="rsvp-guest">
+              <div class="service-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h3>5) RSVP & Guest Calling</h3>
+              <p class="service-description">
+                Hassle-free handling of guest invitations, confirmations, and
+                communications. We ensure accurate headcounts and resolve all
+                guest queries.
+              </p>
+
+              <div class="phase-section">
+                <h4>
+                  <i class="fas fa-address-book me-2"></i>Guest Management
+                </h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Personalized guest
+                    invitation calls with detailed event information
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Tracking guest RSVPs and
+                    ensuring accurate headcounts
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Resolving guest queries
+                    related to travel, stay, and event schedule
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Logistics Management -->
+            <div class="service-detail-card" id="logistics">
+              <div class="service-icon">
+                <i class="fas fa-truck"></i>
+              </div>
+              <h3>6) Logistics Management</h3>
+              <p class="service-description">
+                Smooth transportation arrangements, including for outstation
+                guests. We handle everything from airport pickups to luxury
+                bridal entry vehicles.
+              </p>
+
+              <div class="phase-section">
+                <h4>
+                  <i class="fas fa-route me-2"></i>Transportation Services
+                </h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Organizing transport for
+                    guest pickups/drop-offs (airport, station, or venue)
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Managing bridal and
+                    groom's entry vehicles, including luxury options
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Coordinating luggage
+                    tagging and delivery to respective guest rooms
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Catering Management -->
+            <div class="service-detail-card" id="catering">
+              <div class="service-icon">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <h3>7) Catering Management</h3>
+              <p class="service-description">
+                We coordinate with catering teams for delightful and stress-free
+                dining experiences. From menu curation to service staff
+                monitoring, we ensure culinary excellence.
+              </p>
+
+              <div class="phase-section">
+                <h4>
+                  <i class="fas fa-concierge-bell me-2"></i>Culinary Services
+                </h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Menu curation with
+                    caterers, including regional and international cuisines
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Arranging tastings for
+                    final approval
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Monitoring service staff
+                    and ensuring smooth dining experiences
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Guest Hospitality & Welcome Services -->
+            <div class="service-detail-card" id="hospitality">
+              <div class="service-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3>8) Guest Hospitality & Welcome Services</h3>
+              <p class="service-description">
+                Creating a warm and memorable first impression for all guests
+                with elegant welcome setups and personalized hospitality
+                services.
+              </p>
+
+              <div class="phase-section">
+                <h4><i class="fas fa-door-open me-2"></i>Welcome Services</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Elegant welcome setups,
+                    including traditional aarti and garland distribution
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Coordination of welcome
+                    hampers (customized with itinerary, snacks, and essentials)
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Providing hostesses for
+                    personalized greetings and guest assistance
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Social Media Reels Makers -->
+            <div class="service-detail-card" id="social-media">
+              <div class="service-icon">
+                <i class="fas fa-video"></i>
+              </div>
+              <h3>9) Social Media Reels Makers</h3>
+              <p class="service-description">
+                Creating vibrant wedding reels and live social media content for
+                lasting memories. Capture and share your special moments
+                instantly with your loved ones.
+              </p>
+
+              <div class="phase-section">
+                <h4><i class="fas fa-camera me-2"></i>Content Creation</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Live coverage of events
+                    to create short, engaging Instagram-worthy reels
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Editing and delivering
+                    reels on the same day for immediate sharing
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Capturing candid moments,
+                    performances, and grand entries
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Artist Management (Premium) -->
+            <div class="service-detail-card" id="artist-management">
+              <span class="premium-badge"
+                ><i class="fas fa-crown me-1"></i>Add-On Premium Service</span
+              >
+              <div
+                class="service-icon"
+                style="background: linear-gradient(135deg, #f093fb, #f5576c)"
+              >
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Artist Management</h3>
+              <p class="service-description">
+                Take your celebration to the next level with celebrity
+                performances and professional entertainment. We coordinate all
+                artist bookings and appearances.
+              </p>
+
+              <div class="phase-section">
+                <h4>
+                  <i class="fas fa-microphone me-2"></i>Entertainment
+                  Coordination
+                </h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Coordinating celebrity
+                    appearances or performances booking
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Anchor booking for event
+                    hosting
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Professional Dancers and
+                    Choreographers
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Singers and Musicians
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Comedians for
+                    entertainment
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Live Bands and DJ
+                    services
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Home-Based Function Management -->
+            <div class="service-detail-card">
+              <div class="service-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>Home-Based Function Management</h3>
+              <p class="service-description">
+                Precision planning for ceremonies and functions held at home. We
+                ensure intimate gatherings are executed flawlessly with all
+                necessary arrangements.
+              </p>
+
+              <div class="phase-section">
+                <h4>
+                  <i class="fas fa-house-user me-2"></i>Home Event Services
+                </h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Complete planning and
+                    coordination for home-based ceremonies
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Space optimization and
+                    décor arrangement
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Vendor coordination for
+                    catering and rentals at home venues
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Guest management and
+                    hospitality at residential locations
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Helpers, Porters & Runners -->
+            <div class="service-detail-card">
+              <div class="service-icon">
+                <i class="fas fa-running"></i>
+              </div>
+              <h3>Helpers, Porters & Runners</h3>
+              <p class="service-description">
+                Quick and efficient assistance with porter tasks and last-minute
+                needs. Our dedicated team ensures nothing is left unattended
+                during your celebration.
+              </p>
+
+              <div class="phase-section">
+                <h4><i class="fas fa-hands me-2"></i>Support Services</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>On-site helpers for
+                    immediate assistance
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Porter services for
+                    luggage and materials
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>Runners for last-minute
+                    errands and coordination
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>24/7 availability during
+                    event duration
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+              <h3 class="text-white">Ready to Plan Your Dream Wedding?</h3>
+              <p class="text-white">
+                Our services are designed to provide expert support, blending
+                tradition and innovation, ensuring every aspect of your wedding
+                is flawless.
+              </p>
+              <a href="contact.html" class="vs-btn">Get In Touch</a>
+              <a
+                href="tel:+918788171625"
+                class="vs-btn ms-3"
+                style="
+                  background: transparent;
+                  border: 2px solid white;
+                  color: white;
+                "
+              >
+                <i class="fas fa-phone-alt me-2"></i>+91 87881 71625
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Details Area End -->
+
+    <!-- Footer Area -->
+    <footer class="footer-layout2 shape-mockup-wrap">
+      <div class="widget-area">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-6 col-lg-4 col-xl-auto">
+              <div class="widget footer-widget">
+                <h3 class="widget_title">About Company</h3>
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="assets/logo.png"
+                      alt="Shubhyog"
+                      class="logo"
+                      width="130"
+                  /></a>
+                </div>
+                <div class="vs-widget-about">
+                  <p class="footer-text">
+                    With over 12 years of experience and 350+ successfully
+                    managed weddings, we turn your dreams into reality with
+                    exceptional service and unforgettable celebrations.
+                  </p>
+                  <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 col-xl-auto">
+              <div class="widget widget_nav_menu footer-widget">
+                <h3 class="widget_title">Quick Link</h3>
+                <div class="menu-all-pages-container">
+                  <ul class="menu">
+                    <li>
+                      <a href="index.html">Home <span></span></a>
+                    </li>
+                    <li>
+                      <a href="service.html">Services <span></span></a>
+                    </li>
+                    <li>
+                      <a href="service-details.html"
+                        >Service Details <span></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="vendors.html">Vendors <span></span></a>
+                    </li>
+                    <li>
+                      <a href="about.html">About Us <span></span></a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact Us <span></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <div class="widget footer-widget">
+                <h3 class="widget_title">Contact Us</h3>
+                <div class="footer-info style2">
+                  <div class="footer-info_icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="media-body">
+                    <span class="footer-info_label">Phone No:</span>
+                    <div class="footer-info_link">
+                      <a href="tel:+918788171625">+91 87881 71625</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-info style2">
+                  <div class="footer-info_icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="media-body">
+                    <span class="footer-info_label">Email Address:</span>
+                    <div class="footer-info_link">
+                      <a href="mailto:info@shubhyog.com">info@shubhyog.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-info style2">
+                  <div class="footer-info_icon">
+                    <i class="fas fa-location"></i>
+                  </div>
+                  <div class="media-body">
+                    <div class="footer-info_link">
+                      Mumbai, Maharashtra, India
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright-wrap">
+          <div class="row justify-content-center justify-content-lg-between">
+            <div class="col-auto">
+              <p class="copyright-text">
+                Copyright <i class="fal fa-copyright"></i> 2025
+                <a href="index.html">Shubhyog</a>. All rights reserved by
+                <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a>.
+              </p>
+            </div>
+            <div class="col-auto">
+              <nav class="footer-menu">
+                <ul>
+                  <li class="menu-item">
+                    <a href="about.html">Terms &amp; Condition</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="about.html">Privacy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- WOW.js Animation -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
