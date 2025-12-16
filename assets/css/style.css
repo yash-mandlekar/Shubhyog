@@ -77,7 +77,7 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #d1251b;
+  --theme-color: #000000;
   --sec-color: #000000;
   --title-color: #272e39;
   --body-color: #565656;
@@ -4398,11 +4398,11 @@ a.text-theme:hover,
   font-size: 16px;
   color: var(--sec-color);
 }
-.main-menu a:hover,
+/* .main-menu a:hover,
 .menu-style2 a:hover,
 .menu-style3 a:hover {
   color: var(--sec-color);
-}
+} */
 .main-menu > ul > li > a .new-label,
 .menu-style2 > ul > li > a .new-label,
 .menu-style3 > ul > li > a .new-label {
@@ -4685,9 +4685,9 @@ a.text-theme:hover,
   color: var(--white-color);
   transition: all 0.3s ease-in-out;
 }
-.menu-style2 a:hover {
+/* .menu-style2 a:hover {
   color: var(--theme-color);
-}
+} */
 .menu-style2 a::after {
   display: inline-block;
   transition: all 0.3s ease-in-out;
@@ -4698,7 +4698,7 @@ a.text-theme:hover,
   margin-right: 20px;
 }
 .menu-style2 > ul > li:hover > a {
-  color: var(--theme-color);
+  /* color: var(--theme-color); */
   transition: all 0.3s ease-in-out;
 }
 .menu-style2 > ul > li:hover > a::after {
@@ -12602,8 +12602,6 @@ blockquote.vs-quote .quote-author {
 }
 /*# sourceMappingURL=style.css.map */
 
-
-
 .slick-slider img {
-    filter: brightness(0.5);
+  filter: brightness(0.5);
 }
